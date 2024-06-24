@@ -16,8 +16,14 @@ body {
     grid-template-rows: repeat(3, 1fr);
     
     gap: 24px; /* Define el espacio entre filas y columnas */
-    row-gap: 20px; /* Espacio entre filas */
-    column-gap: 20px; /* Espacio entre columnas */
+    grid-auto-flow: row; /* Es el valor por default */
+    /* grid-auto-flow: column; /* Este valor cambia el flujo a columnas */ */
+
+    /* Esto no es de Grid */
+
+    /* Esto funciona para cambiar la dirección. */
+
+    direction: rtl; /* left to right / right to left */
     
     width: 500px;
     height: 500px;
@@ -26,7 +32,7 @@ body {
 }
 
 .rosa {
-    background-color: pink;
+    background-color: rgb(255, 125, 147);
 }
 
 .verde {
@@ -34,13 +40,22 @@ body {
 }
 
 .amarillo {
-    background-color: yellow;
+    background-color: rgb(249, 241, 95);
 }
 
 .morado {
-    background-color: violet;
+    background-color: rgb(214, 66, 255);
 }
 
 .azul {
     background-color: blue;
+}
+
+.container div {
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    color: white;
 }
