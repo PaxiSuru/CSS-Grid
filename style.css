@@ -12,35 +12,35 @@ body {
 .container {
     display: grid;
 
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: repeat(3, 100px);
-    grid-template-areas: 
-        "header header header"
-        "main   main   sidebar"
-        "footer footer footer";
-
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+    gap: 24px; /* Define el espacio entre filas y columnas */
+    row-gap: 20px; /* Espacio entre filas */
+    column-gap: 20px; /* Espacio entre columnas */
+    
     width: 500px;
     height: 500px;
-    margin: 0 auto; /* Esto centra el elemento cuando tiene ancho definido. */
-    background-color: whitesmoke;
+    margin: 0 auto;
+    background-color: rgb(245, 114, 114);
 }
 
-.header {
-    grid-area: header;
-    background-color: aqua;
+.rosa {
+    background-color: pink;
 }
 
-.main {
-    grid-area: main;
-    background-color: rgb(0, 8, 255);
+.verde {
+    background-color: greenyellow;
 }
 
-.sidebar {
-    grid-area: sidebar;
-    background-color: deepskyblue;
+.amarillo {
+    background-color: yellow;
 }
 
-.footer {
-    grid-area: footer;
-    background-color: darksalmon;
+.morado {
+    background-color: violet;
+}
+
+.azul {
+    background-color: blue;
 }
